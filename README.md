@@ -7,9 +7,21 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Retrieve and construct spatial geometries and street networks from OpenStreetMap.
+Summary: Retrieve, construct, analyze, and visualize street networks from OpenStreetMap
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/osmnx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/osmnx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/osmnx-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/osmnx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/osmnx-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/osmnx/badges/version.svg)](https://anaconda.org/conda-forge/osmnx)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/osmnx/badges/downloads.svg)](https://anaconda.org/conda-forge/osmnx)
 
 Installing osmnx
 ================
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `osmnx` available on your platform
 ```
 conda search osmnx --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/osmnx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/osmnx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/osmnx-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/osmnx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/osmnx-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/osmnx/badges/version.svg)](https://anaconda.org/conda-forge/osmnx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/osmnx/badges/downloads.svg)](https://anaconda.org/conda-forge/osmnx)
 
 
 Updating osmnx-feedstock
