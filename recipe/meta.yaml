@@ -1,5 +1,5 @@
-{% set version = "0.1a1.dev11" %}
-{% set commit = "0c2e088249289393817a6fe4d609b5e614bba36c" %}
+{% set version = "0.1" %}
+{% set commit = "3a820f065d4d7f3ae58e3169c00a61411c5f886c" %}
 
 package:
   name: osmnx
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ commit }}.tar.gz
   url: https://github.com/gboeing/osmnx/archive/{{ commit }}.tar.gz
-  sha256: a72f17adb2d966fae2b44cf1e7e768d5a927ba7c37cc42f6a84f5d013c0e8e94
+  sha256: ea088d39d3de76e8469ef2294c8b8c41e6ada93f47b0ecfdeefaac0747538484
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - shapely
     - descartes
     - geopy >=1.11
-    - rtree >=0.8
+    - rtree >=0.8.3
 
 test:
   imports:
@@ -39,9 +39,10 @@ about:
   home: https://github.com/gboeing/osmnx
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Retrieve and construct spatial geometries and street networks from OpenStreetMap.'
+  summary: 'Retrieve, construct, analyze, and visualize street networks from OpenStreetMap'
   license_family: MIT
 
 extra:
   recipe-maintainers:
     - ocefpaf
+    - gboeing
