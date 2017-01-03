@@ -1,14 +1,13 @@
 {% set version = "0.1" %}
-{% set commit = "3a820f065d4d7f3ae58e3169c00a61411c5f886c" %}
 
 package:
   name: osmnx
   version: {{ version }}
 
 source:
-  fn: {{ commit }}.tar.gz
-  url: https://github.com/gboeing/osmnx/archive/{{ commit }}.tar.gz
-  sha256: ea088d39d3de76e8469ef2294c8b8c41e6ada93f47b0ecfdeefaac0747538484
+  fn: osmnx-{{ version }}.tar.gz
+  url: https://github.com/gboeing/osmnx/archive/v{{ version }}.tar.gz
+  sha256: 9fda466d434022b55f41f0511c99cdf59bf5119630caa5263a315f2d3ab3524c
 
 build:
   number: 0
