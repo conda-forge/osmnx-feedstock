@@ -1,13 +1,15 @@
+{% set name = "osmnx" %}
 {% set version = "0.2" %}
+{% set md5 = "1002805d097d295236c2ba166b5274fa" %}
 
 package:
-  name: osmnx
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: osmnx-{{ version }}.tar.gz
-  url: https://github.com/gboeing/osmnx/archive/v{{ version }}.tar.gz
-  sha256: 6a8eb7ee64e28c24c531e09c8a54a794edbdc949879ced72e108537223a493ca
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  md5: {{ md5 }}
 
 build:
   number: 0
