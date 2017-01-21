@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.2.1" %}
-{% set md5 = "83614b39ca948bdbc1b4373b478d0372" %}
+{% set version = "0.2.2" %}
+{% set md5 = "5dc133bc871eed4a0f3685a903d12b1f" %}
 
 package:
   name: {{ name }}
@@ -24,7 +24,7 @@ requirements:
     - requests
     - numpy
     - pandas >=0.19
-    - geopandas >=0.2
+    - geopandas >=0.2.1
     - networkx
     - matplotlib
     - shapely
