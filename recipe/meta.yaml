@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.2.2" %}
-{% set md5 = "5dc133bc871eed4a0f3685a903d12b1f" %}
+{% set version = "0.3" %}
+{% set md5 = "68ca9216333524b6d2cdd698af89a616" %}
 
 package:
   name: {{ name }}
@@ -26,11 +26,12 @@ requirements:
     - pandas >=0.19
     - geopandas >=0.2.1
     - networkx
-    - matplotlib
+    - matplotlib >=2.0
     - shapely
     - descartes
-    - geopy >=1.11
+    - geopy
     - rtree >=0.8.3
+    - folium
 
 test:
   imports:
