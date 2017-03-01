@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.3.1" %}
-{% set md5 = "2dfb203a849fc8ae2211f2b8ae78517f" %}
+{% set version = "0.4" %}
+{% set md5 = "41bb17632a8fae409d202eb12117f83b" %}
 
 package:
   name: {{ name }}
