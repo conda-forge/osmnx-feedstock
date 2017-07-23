@@ -9,6 +9,10 @@ Feedstock license: BSD 3-Clause
 
 Summary: Retrieve, construct, analyze, and visualize street networks from OpenStreetMap
 
+OSMnx is a Python 2 and 3 package that lets you download spatial geometries and
+construct, project, visualize, and analyze street networks from OpenStreetMap's
+APIs. You can download and construct walkable, drivable, or bikable urban networks
+with a single line of Python code, and then easily analyze and visualize them.
 
 
 Current build status
