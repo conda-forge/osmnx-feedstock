@@ -25,7 +25,7 @@ requirements:
     - numpy
     - pandas
     - geopandas
-    - networkx>=2
+    - networkx >=2
     - matplotlib
     - shapely
     - descartes
