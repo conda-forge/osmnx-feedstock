@@ -9,7 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Retrieve, construct, analyze, and visualize street networks from OpenStreetMap
 
-OSMnx is a Python 2 and 3 package that lets you download spatial geometries and
+OSMnx is a Python package that lets you download spatial geometries and
 construct, project, visualize, and analyze street networks from OpenStreetMap's
 APIs. You can download and construct walkable, drivable, or bikable urban networks
 with a single line of Python code, and then easily analyze and visualize them.
@@ -70,6 +70,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========

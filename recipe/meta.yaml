@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.6" %}
-{% set sha256 = "c038133d987befd38a6bdfaf478851d1d8dbf6f2c73bf7c6793956028562287c" %}
+{% set version = "0.7" %}
+{% set sha256 = "d6f1a78443e1dff3dc2b565b2f211bff83daa737512cbb7ec5b4d9e7554b1729" %}
 
 package:
   name: {{ name }}
@@ -44,11 +44,11 @@ about:
   license_file: LICENSE.txt
   summary: 'Retrieve, construct, analyze, and visualize street networks from OpenStreetMap'
   description: |
-    OSMnx is a Python 2 and 3 package that lets you download spatial geometries and
+    OSMnx is a Python package that lets you download spatial geometries and
     construct, project, visualize, and analyze street networks from OpenStreetMap's
     APIs. You can download and construct walkable, drivable, or bikable urban networks
     with a single line of Python code, and then easily analyze and visualize them.
-  doc_url: https://osmnx.readthedocs.io/en/stable/
+  doc_url: https://osmnx.readthedocs.io
   dev_url: https://github.com/gboeing/osmnx
 
 extra:
