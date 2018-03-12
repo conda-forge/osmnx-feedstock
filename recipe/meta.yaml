@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "68659bfd2a3363536ff798549c9b938cd3cd1f2dd7e5427f8f21776d5c3ffbe6" %}
+{% set version = "0.7.3" %}
+{% set sha256 = "eef0c85fc67f3459840c571a764141c3affdfdf625da3e634fb224e8da72586e" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
