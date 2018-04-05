@@ -18,9 +18,7 @@ with a single line of Python code, and then easily analyze and visualize them.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/osmnx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/osmnx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/osmnx-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/osmnx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/osmnx-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/osmnx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
 
 Current release info
 ====================
