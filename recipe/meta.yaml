@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.7.3" %}
-{% set sha256 = "eef0c85fc67f3459840c571a764141c3affdfdf625da3e634fb224e8da72586e" %}
+{% set version = "0.7.4" %}
+{% set sha256 = "d7d544a5657ac741a1e35d862bd012bc94d4acd0b337fb473e65570a36ca713a" %}
 
 package:
   name: {{ name }}
@@ -12,13 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - requests
