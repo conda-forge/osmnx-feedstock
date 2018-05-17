@@ -18,12 +18,15 @@ with a single line of Python code, and then easily analyze and visualize them.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/osmnx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/osmnx-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/osmnx/badges/version.svg)](https://anaconda.org/conda-forge/osmnx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/osmnx/badges/downloads.svg)](https://anaconda.org/conda-forge/osmnx)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-osmnx-green.svg)](https://anaconda.org/conda-forge/osmnx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/osmnx.svg)](https://anaconda.org/conda-forge/osmnx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/osmnx.svg)](https://anaconda.org/conda-forge/osmnx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/osmnx.svg)](https://anaconda.org/conda-forge/osmnx) |
 
 Installing osmnx
 ================
