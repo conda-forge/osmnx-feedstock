@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "506103ece989fcc0a8d8d0d7a24f727719876c1399e7dbba4e47f055a49cf63b" %}
+{% set version = "0.9" %}
+{% set sha256 = "3e97f799769469412b12b8d71cc2342d0c93c9f6ea4ca36366c415eef9fbe344" %}
 
 package:
   name: {{ name }}
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - pandas
     - geopandas
-    - networkx >=2.1
+    - networkx
     - matplotlib
     - shapely
     - descartes
