@@ -14,6 +14,7 @@ export CONFIG_FILE="${CI_SUPPORT}/${CONFIG}.yaml"
 
 cat >~/.condarc <<CONDARC
 
+channel_priority: strict
 conda-build:
  root-dir: /home/conda/feedstock_root/build_artifacts
 
