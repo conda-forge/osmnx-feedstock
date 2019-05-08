@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About osmnx
 ===========
 
@@ -22,8 +18,17 @@ with a single line of Python code, and then easily analyze and visualize them.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/osmnx-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/osmnx-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3168&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/osmnx-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
