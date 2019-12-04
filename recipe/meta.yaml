@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.10" %}
-{% set sha256 = "d57a7aa0c11d6e370f48660cf13a44dbda9a172d6ec235459a448a58284eee1c" %}
+{% set version = "0.11" %}
+{% set sha256 = "dfcf8dc623004a6b3f57aae87f109e24d93fa0ac95dbbfdc4fe7abb4fbdc7d96" %}
 
 package:
   name: {{ name }}
@@ -12,26 +12,28 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
-    - python
     - pip
-  run:
     - python
-    - requests
+  run:
+    - descartes
+    - folium
+    - geopandas
+    - geopy
+    - matplotlib
+    - networkx
     - numpy
     - pandas
-    - geopandas
-    - networkx
-    - matplotlib
-    - shapely
-    - descartes
-    - geopy
+    - python
+    - requests
     - rtree
-    - folium
+    - scipy
+    - scikit-learn
+    - shapely
 
 test:
   imports:
