@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.11.1" %}
-{% set sha256 = "7bb64dc7cddb3af04ff87cda6240350e3d713977f0adc8ad03527e97792eb1ac" %}
+{% set version = "0.11.2" %}
+{% set sha256 = "987fac45d53dbfbf5c74e19a947b002bc8fa4702dff87c63075e80b7578c5002" %}
 
 package:
   name: {{ name }}
@@ -28,6 +28,7 @@ requirements:
     - networkx
     - numpy
     - pandas
+    - pyproj
     - python
     - requests
     - rtree
