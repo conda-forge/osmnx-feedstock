@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "0.11.3" %}
-{% set sha256 = "04d9bbd0dbaf9e3d509b77aa4b7a245db3f9f08e0c0aaed93e50212d8ce4033a" %}
+{% set version = "0.11.4" %}
+{% set sha256 = "8341ee51164a7d0e634a967a933d4a2420d1e0ddac5a0c6c0bcbae94567c211a" %}
 
 package:
   name: {{ name }}
