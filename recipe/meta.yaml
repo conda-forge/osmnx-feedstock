@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -45,7 +45,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Python for street networks. Retrieve, model, analyze, and visualize street networks and other spatial data from OpenStreetMap.'
+  summary: Python for street networks. Retrieve, model, analyze, and visualize street networks and other spatial data from OpenStreetMap.
   description: |
     OSMnx is a Python package that lets you download spatial geometries and
     model, project, visualize, and analyze street networks from OpenStreetMap's
