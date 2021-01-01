@@ -1,9 +1,9 @@
 {% set name = "osmnx" %}
-{% set version = "0.16.2" %}
-{% set sha256 = "45c94896ca068653b2c233db459d03d8070a813df6cd8d95143f0714f8e0e7d6" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "e6a0a6fca8d318e850b5400ad1a87f1dc97d3c2eac61ff5c295864304ceff06b" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
@@ -13,10 +13,10 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - pip
     - python
   run:
