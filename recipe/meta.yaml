@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "8ed9b69f2365a252b9cae78a1611ef7adb6b9800ca880aa49b3edcde6bcc5fbc" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "e035523a0e2011425800dca0fdbb4dc41b55f6286960936e3dcf94e539c757e5" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - folium
     - gdal
@@ -28,7 +28,7 @@ requirements:
     - numpy
     - pandas
     - pyproj
-    - python >=3.6
+    - python >=3.7
     - rasterio
     - requests
     - rtree
