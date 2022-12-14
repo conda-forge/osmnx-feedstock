@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python>=3.9
+    - python >=3.9
   run:
     - folium
     - gdal
@@ -28,13 +28,13 @@ requirements:
     - numpy
     - pandas
     - pyproj
-    - python>=3.9
+    - python >=3.9
     - rasterio
     - requests
     - rtree
     - scipy
     - scikit-learn
-    - shapely=1.8.*
+    - shapely =1.8.*
 
 test:
   imports:
