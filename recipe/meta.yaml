@@ -29,12 +29,12 @@ requirements:
     - pandas
     - pyproj
     - python >=3.9
+    - python-dateutil
     - rasterio
     - requests
-    - rtree
     - scipy
     - scikit-learn
-    - shapely =1.8.*
+    - shapely >=2.0
 
 test:
   imports:
