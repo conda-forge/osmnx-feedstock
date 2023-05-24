@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "3f18b02acf7bf0ab302dced851417d461696538d308abe6e9150e0a4ff2e8acf" %}
+{% set version = "1.3.1" %}
+{% set sha256 = "d80a4e58f1912ae6f5e66e9e8dbdc7cb56d1e3cb3014f90f42383f07f6316e59" %}
 
 package:
   name: {{ name|lower }}
@@ -29,7 +29,6 @@ requirements:
     - pandas
     - pyproj
     - python >=3.9
-    - python-dateutil
     - rasterio
     - requests
     - scipy
