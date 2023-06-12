@@ -1,6 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "1.3.1.post0" %}
-{% set sha256 = "26247b18889e1be47f6b1249392972d2ec5f6c9772c3a3f853350769fa378ce5" %}
+{% set version = "1.4.0" %}
+{% set sha256 = "4eab2363a15abd16d0a8f48d614a46cf74397d8ea6e699fee0e5680b6d1e9e17" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,6 @@ requirements:
     - networkx
     - numpy
     - pandas
-    - pyproj
     - python >=3.8
     - rasterio
     - requests
