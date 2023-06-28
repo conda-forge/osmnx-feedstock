@@ -3,17 +3,17 @@ About osmnx-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/osmnx-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/gboeing/osmnx
+Home: https://osmnx.readthedocs.io
 
 Package license: MIT
 
-Summary: Python for street networks. Retrieve, model, analyze, and visualize street networks and other spatial data from OpenStreetMap.
+Summary: Python for street networks. Download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap.
 
 Development: https://github.com/gboeing/osmnx
 
-Documentation: https://osmnx.readthedocs.io/
+Documentation: https://osmnx.readthedocs.io
 
-OSMnx is a Python package that lets you download spatial geometries and model, project, visualize, and analyze real-world street networks from OpenStreetMap's APIs. Users can download and model walkable, drivable, or bikeable urban networks with a single line of Python code, and then easily analyze and visualize them. You can just as easily download and work with amenities/points of interest, building footprints, elevation data, street bearings/orientations, speed/travel time, and network routing.
+OSMnx is a Python package to download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap. You can download and model walking, driving, or biking networks with a single line of code then easily analyze and visualize them. You can just as easily work with urban amenities/points of interest, building footprints, transit stops, elevation data, street orientations, speed/travel time, and routing.
 
 Current build status
 ====================
