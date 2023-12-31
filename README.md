@@ -7,7 +7,7 @@ Home: https://osmnx.readthedocs.io
 
 Package license: MIT
 
-Summary: Python for street networks. Download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap.
+Summary: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap.
 
 Development: https://github.com/gboeing/osmnx
 
