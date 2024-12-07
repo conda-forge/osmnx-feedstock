@@ -1,6 +1,5 @@
 {% set name = "osmnx" %}
 {% set version = "2.0.0" %}
-{% set sha256 = "4fd2eb3736cea503be94ab18d31a669addbaf2dd6a8249527cef94163bb93975" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -9,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 4fd2eb3736cea503be94ab18d31a669addbaf2dd6a8249527cef94163bb93975
 
 build:
-  noarch: python {{ python_min }}
+  noarch: python
   number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
