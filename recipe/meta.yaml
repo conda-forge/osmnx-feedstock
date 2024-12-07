@@ -1,29 +1,29 @@
 {% set name = "osmnx" %}
 {% set version = "2.0.0" %}
 {% set sha256 = "4fd2eb3736cea503be94ab18d31a669addbaf2dd6a8249527cef94163bb93975" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
+  noarch: python {{ python_min }}
   number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - hatch
+    - hatchling
     - pip
-    - python
+    - python {{ python_min }}
 
   run:
-    # minimum supported python version from package's pyproject.toml
-    - python >=3.9
+    - python >={{ python_min }}
 
     # required dependencies' min versions from package's pyproject.toml
     - geopandas >=1.0
@@ -41,8 +41,12 @@ requirements:
     - scipy >=1.5
 
 test:
+  commands:
+    - {{ PYTHON }} -m pip check
   imports:
     - osmnx
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://osmnx.readthedocs.io
