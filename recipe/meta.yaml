@@ -41,7 +41,7 @@ requirements:
 
 test:
   commands:
-    - {{ PYTHON }} -m pip check
+    - python -m pip check
   imports:
     - osmnx
   requires:
