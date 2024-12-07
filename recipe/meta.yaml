@@ -12,8 +12,8 @@ source:
 
 build:
   noarch: python
-  number: 2
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 3
+  script: python -m pip install . -vv
 
 requirements:
   host:
@@ -44,6 +44,11 @@ test:
     - python -m pip check
   imports:
     - osmnx
+    - matplotlib
+    - rasterio
+    - rio_vrt
+    - scipy
+    - sklearn
   requires:
     - pip
     - python {{ python_min }}
