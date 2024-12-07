@@ -1,3 +1,4 @@
+# package name, version, and minimum python from package's pyproject.toml
 {% set name = "osmnx" %}
 {% set version = "2.0.0" %}
 {% set python_min = "3.9" %}
@@ -45,7 +46,7 @@ test:
   imports:
     - osmnx
   requires:
-    - python {{ python_min }}
+    - python >={{ python_min }}
 
 about:
   home: https://osmnx.readthedocs.io
