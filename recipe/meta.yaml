@@ -41,10 +41,11 @@ requirements:
 
 test:
   commands:
-    - pip check
+    - {{ PYTHON }} -m pip check
   imports:
     - osmnx
   requires:
+    - pip
     - python {{ python_min }}
 
 about:
