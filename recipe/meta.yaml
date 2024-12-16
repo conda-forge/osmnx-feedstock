@@ -17,6 +17,8 @@ build:
 outputs:
   - name: osmnx-base
     script: build_base.sh
+    build:
+      noarch: python
     requirements:
       build:
         - python                              # [build_platform != target_platform]
