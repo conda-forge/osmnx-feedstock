@@ -12,46 +12,62 @@ source:
 
 build:
   noarch: python
-  number: 3
-  script: python -m pip install . -vv
+  number: 4
+  script: python -m pip install . -vv --no-deps --no-build-isolation
 
-requirements:
-  host:
-    - hatchling
-    - pip
-    - python {{ python_min }}
+outputs:
+  - name: osmnx-base
+    requirements:
+      host:
+        - hatchling
+        - pip
+        - python {{ python_min }}
+      run:
+        # required dependencies' min versions from package's pyproject.toml
+        - geopandas >=1.0
+        - networkx >=2.5
+        - numpy >=1.22
+        - pandas >=1.4
+        - requests >=2.27
+        - python >={{ python_min }}
+        - shapely >=2.0
+    test:
+      commands:
+        - python -m pip check
+      imports:
+        - osmnx
+      requires:
+        - pip
+        - python {{ python_min }}
 
-  run:
-    - python >={{ python_min }}
+  - name: osmnx
+    requirements:
+      host:
+        - hatchling
+        - pip
+        - python {{ python_min }}
 
-    # required dependencies' min versions from package's pyproject.toml
-    - geopandas >=1.0
-    - networkx >=2.5
-    - numpy >=1.22
-    - pandas >=1.4
-    - requests >=2.27
-    - shapely >=2.0
-
-    # optional dependencies' min versions from package's pyproject.toml
-    - matplotlib-base >=3.5
-    - rasterio >=1.3
-    - rio-vrt >=0.3
-    - scikit-learn >=0.23
-    - scipy >=1.5
-
-test:
-  commands:
-    - python -m pip check
-  imports:
-    - osmnx
-    - matplotlib
-    - rasterio
-    - rio_vrt
-    - scipy
-    - sklearn
-  requires:
-    - pip
-    - python {{ python_min }}
+      run:
+        - {{ pin_subpackage('osmnx-base', exact=True) }}
+        # optional dependencies' min versions from package's pyproject.toml
+        - matplotlib-base >=3.5
+        - rasterio >=1.3
+        - rio-vrt >=0.3
+        - scikit-learn >=0.23
+        - scipy >=1.5
+    test:
+      commands:
+        - python -m pip check
+      imports:
+        - osmnx
+        - matplotlib
+        - rasterio
+        - rio_vrt
+        - scipy
+        - sklearn
+      requires:
+        - pip
+        - python {{ python_min }}
 
 about:
   home: https://osmnx.readthedocs.io
