@@ -15,7 +15,7 @@ build:
   noarch: python
 
 outputs:
-  - name: {{ name }}-base
+  - name: osmnx-base
     script: ${PYTHON} -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       build:
@@ -45,13 +45,13 @@ outputs:
         - pip
         - python {{ python_min }}
 
-  - name: {{ name }}
+  - name: osmnx
     requirements:
       host:
         - python {{ python_min }}
       run:
         - python >={{ python_min }}
-        - {{ pin_subpackage("{{ name }}-base", exact=True) }}
+        - {{ pin_subpackage('osmnx-base', exact=True) }}
         - matplotlib-base >=3.5
         - rasterio >=1.3
         - rio-vrt >=0.3
