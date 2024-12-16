@@ -16,7 +16,7 @@ build:
 
 outputs:
   - name: osmnx-base
-    script: ${PYTHON} -m pip install . -vv --no-deps --no-build-isolation
+    script: build_base.sh
     requirements:
       build:
         - python                              # [build_platform != target_platform]
