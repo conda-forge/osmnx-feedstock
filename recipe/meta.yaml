@@ -46,8 +46,9 @@ outputs:
     requirements:
       host:
         - python {{ python_min }}
+        - hatchling
+        - pip
       run:
-        - python >={{ python_min }}
         - {{ pin_subpackage('osmnx-base', exact=True) }}
         - matplotlib-base >=3.5
         - rasterio >=1.3
