@@ -1,5 +1,4 @@
 {% set name = "osmnx" %}
-{% set base = "osmnx-base" %}
 {% set version = "2.0.0" %}
 
 package:
@@ -14,7 +13,7 @@ build:
   number: 4
 
 outputs:
-  - name: {{ base }}
+  - name: {{ name }}-base
     script: build_base.sh
     build:
       noarch: python
@@ -49,7 +48,7 @@ outputs:
         - python {{ python_min }}
       run:
         - python >={{ python_min }}
-        - {{ pin_subpackage(base, exact=True) }}
+        - {{ pin_subpackage('osmnx-base', exact=True) }}
         - matplotlib-base >=3.5
         - rasterio >=1.3
         - rio-vrt >=0.3
