@@ -57,6 +57,11 @@ outputs:
         - python -m pip check
       imports:
         - osmnx
+        - matplotlib
+        - rasterio
+        - rio_vrt
+        - scipy
+        - sklearn
       requires:
         - pip
         - python {{ python_min }}
