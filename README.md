@@ -34,6 +34,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-osmnx-green.svg)](https://anaconda.org/conda-forge/osmnx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/osmnx.svg)](https://anaconda.org/conda-forge/osmnx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/osmnx.svg)](https://anaconda.org/conda-forge/osmnx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/osmnx.svg)](https://anaconda.org/conda-forge/osmnx) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-osmnx--base-green.svg)](https://anaconda.org/conda-forge/osmnx-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/osmnx-base.svg)](https://anaconda.org/conda-forge/osmnx-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/osmnx-base.svg)](https://anaconda.org/conda-forge/osmnx-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/osmnx-base.svg)](https://anaconda.org/conda-forge/osmnx-base) |
 
 Installing osmnx
 ================
@@ -45,16 +46,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `osmnx` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `osmnx, osmnx-base` can be installed with `conda`:
 
 ```
-conda install osmnx
+conda install osmnx osmnx-base
 ```
 
 or with `mamba`:
 
 ```
-mamba install osmnx
+mamba install osmnx osmnx-base
 ```
 
 It is possible to list all of the versions of `osmnx` available on your platform with `conda`:
