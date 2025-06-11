@@ -19,7 +19,7 @@ outputs:
     script: build_base.sh
     requirements:
       host:
-        - uv_build
+        - uv-build
         - pip
         - python {{ python_min }}
       run:
