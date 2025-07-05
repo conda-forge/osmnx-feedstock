@@ -1,5 +1,5 @@
 {% set name = "osmnx" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 90ce2f82ecfe5b0db013b6fc35789efd09491a5493680005b02710ea0b6aaa9b
+  sha256: b58663d210644c3f660fdffa767ff298a113cd7ad15f807c41af54fbca40fca9
 
 build:
   number: 0
@@ -24,7 +24,7 @@ outputs:
         - python {{ python_min }}
       run:
         # required dependencies' min versions from package's pyproject.toml
-        - geopandas >=1.0
+        - geopandas >=1.0.1
         - networkx >=2.5
         - numpy >=1.22
         - pandas >=1.4
@@ -47,9 +47,9 @@ outputs:
       run:
         # optional dependencies' min versions from package's pyproject.toml
         - matplotlib-base >=3.5
-        - rasterio >=1.3
+        - rasterio >=1.3.5
         - rio-vrt >=0.3
-        - scikit-learn >=1.0
+        - scikit-learn >=1.1
         - scipy >=1.8
         - {{ pin_subpackage('osmnx-base', exact=True) }}
     test:
@@ -72,8 +72,7 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap.
-  description: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap. You can download and model walking, driving, or biking networks with a single line of code then analyze and visualize them. You can just as easily work with urban amenities/points
-    of interest, building footprints, transit stops, elevation data, street orientations, speed/travel time, and routing.
+  description: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap. You can download and model walking, driving, or biking networks with a single line of code then analyze and visualize them. You can just as easily work with urban amenities/points of interest, building footprints, transit stops, elevation data, street orientations, speed/travel time, and routing.
   doc_url: https://osmnx.readthedocs.io
   dev_url: https://github.com/gboeing/osmnx
 
