@@ -1,5 +1,5 @@
 {% set name = "osmnx" %}
-{% set version = "2.0.6" %}
+{% set version = "2.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0a00844d3f3f69af42b2dcae835261da77ac7b8e20b1c13cc89a62ab3ab9bc2e
+  sha256: a880ba6fdb288a821db73b6ca2a0c677538e0af7229b11759fbfa7fbb19be478
 
 build:
   number: 0
