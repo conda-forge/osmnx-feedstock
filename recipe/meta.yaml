@@ -1,5 +1,5 @@
 {% set name = "osmnx" %}
-{% set version = "2.0.7" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a880ba6fdb288a821db73b6ca2a0c677538e0af7229b11759fbfa7fbb19be478
+  sha256: 0175ab8710bb973cb7cc76c33eeddd670d9d2f4b444da08a1080c470844add2b
 
 build:
   number: 0
@@ -72,8 +72,8 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap.
-  description: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap. You can download and model walking, driving, or biking networks with a single line of code then analyze and visualize them. You can just as easily work with urban amenities/points
-    of interest, building footprints, transit stops, elevation data, street orientations, speed/travel time, and routing.
+  description: OSMnx is a Python package to easily download, model, analyze, and visualize street networks and other geospatial features from OpenStreetMap. You can download and model walking, driving, or biking networks with a single line of code then analyze and visualize them. You can just as easily work with urban 
+    amenities/points of interest, building footprints, transit stops, elevation data, street orientations, speed/travel time, and routing.
   doc_url: https://osmnx.readthedocs.io
   dev_url: https://github.com/gboeing/osmnx
 
