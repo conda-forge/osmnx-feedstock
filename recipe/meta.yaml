@@ -21,15 +21,15 @@ outputs:
       host:
         - uv-build
         - pip
-        - python {{ python_min }}
+        - python >=3.11
       run:
         # required dependencies' min versions from package's pyproject.toml
         - geopandas >=1.0.1
         - networkx >=2.5
-        - numpy >=1.22
-        - pandas >=1.4
-        - python >={{ python_min }}
-        - requests >=2.27
+        - numpy >=1.24
+        - pandas >=1.5
+        - python >=3.11
+        - requests >=2.30
         - shapely >=2.0
     test:
       commands:
@@ -38,7 +38,7 @@ outputs:
         - osmnx
       requires:
         - pip
-        - python {{ python_min }}
+        - python >=3.11
 
   - name: {{ name }}
     build:
@@ -46,11 +46,11 @@ outputs:
     requirements:
       run:
         # optional dependencies' min versions from package's pyproject.toml
-        - matplotlib-base >=3.5
-        - rasterio >=1.3.5
+        - matplotlib-base >=3.6
+        - rasterio >=1.4
         - rio-vrt >=0.3
-        - scikit-learn >=1.1
-        - scipy >=1.8
+        - scikit-learn >=1.2
+        - scipy >=1.10
         - {{ pin_subpackage('osmnx-base', exact=True) }}
     test:
       commands:
@@ -64,7 +64,7 @@ outputs:
         - sklearn
       requires:
         - pip
-        - python {{ python_min }}
+        - python >=3.11
 
 about:
   home: https://osmnx.readthedocs.io
