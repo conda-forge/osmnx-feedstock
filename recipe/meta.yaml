@@ -1,5 +1,5 @@
 {% set name = "osmnx" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f9654b364a60e3530ea102f7505cbb927dcc00ba9d41f11c89cb6c38c65b870
+  sha256: da7dd76814f3c8c8eee913e1f13f1505d74e946fcd5e015a0d3e2f7de5280576
 
 build:
   number: 0
