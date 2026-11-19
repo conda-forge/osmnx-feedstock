@@ -1,5 +1,6 @@
 {% set name = "osmnx" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f9654b364a60e3530ea102f7505cbb927dcc00ba9d41f11c89cb6c38c65b870
+  sha256: da7dd76814f3c8c8eee913e1f13f1505d74e946fcd5e015a0d3e2f7de5280576
 
 build:
   number: 0
@@ -21,14 +22,14 @@ outputs:
       host:
         - uv-build
         - pip
-        - python >=3.11
+        - python {{ python_min }}
       run:
         # required dependencies' min versions from package's pyproject.toml
         - geopandas >=1.0.1
         - networkx >=2.5
-        - numpy >=1.24
-        - pandas >=1.5
-        - python >=3.11
+        - numpy >=1.26
+        - pandas >=2.1
+        - python >={{ python_min }}
         - requests >=2.30
         - shapely >=2.0
     test:
@@ -38,7 +39,7 @@ outputs:
         - osmnx
       requires:
         - pip
-        - python >=3.11
+        - python {{ python_min }}
 
   - name: {{ name }}
     build:
@@ -46,11 +47,12 @@ outputs:
     requirements:
       run:
         # optional dependencies' min versions from package's pyproject.toml
-        - matplotlib-base >=3.6
+        - matplotlib-base >=3.7
+        - pyosmium >=4.0
         - rasterio >=1.4
         - rio-vrt >=0.3
-        - scikit-learn >=1.2
-        - scipy >=1.10
+        - scikit-learn >=1.3
+        - scipy >=1.11
         - {{ pin_subpackage('osmnx-base', exact=True) }}
     test:
       commands:
@@ -58,13 +60,14 @@ outputs:
       imports:
         - osmnx
         - matplotlib
+        - osmium
         - rasterio
         - rio_vrt
         - scipy
         - sklearn
       requires:
         - pip
-        - python >=3.11
+        - python {{ python_min }}
 
 about:
   home: https://osmnx.readthedocs.io
